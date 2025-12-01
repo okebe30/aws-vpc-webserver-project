@@ -1,18 +1,65 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>AWS VPC Web Server Project</title>
-</head>
-<body>
-    <h1>Welcome to My AWS VPC Web Server Project</h1>
-    <p>This project demonstrates:</p>
-    <ul>
-        <li>Custom AWS VPC</li>
-        <li>Public & Private Subnets</li>
-        <li>Route Tables & Internet Gateway</li>
-        <li>Nginx Web Server on EC2</li>
-        <li>SSH Key Access</li>
-    </ul>
-    <p>Follow me on my Cloud journey 🚀</p>
-</body>
-</html>
+# AWS VPC Web Server Project
+
+This project shows how I created a custom Virtual Private Cloud (VPC) on AWS with a public subnet, route table, internet gateway, security group, and an EC2 instance running a web server. It demonstrates my understanding of AWS networking and compute services.
+
+## Architecture Overview
+
+This project includes:
+- Custom VPC (10.0.0.0/16)
+- Public subnet
+- Internet Gateway
+- Route table with route to the IGW
+- Security group allowing HTTP and SSH
+- EC2 instance (Amazon Linux 2023)
+- NGINX web server
+- SSH key pair for secure access
+
+## Live Demo
+
+My project website is hosted using GitHub Pages:
+
+https://okebe30.github.io/aws-vpc-webserver-project/
+
+## What I Learned
+
+- How to design a VPC
+- How subnets, route tables, and IGW work
+- How to configure security groups
+- How to launch an EC2 instance
+- How to connect using SSH
+- How to install NGINX on EC2
+- How to host a static site with GitHub Pages
+- How to use Git and GitHub for version control
+
+## Technologies Used
+
+- AWS VPC
+- Subnets
+- Route Tables
+- Internet Gateway
+- EC2
+- Security Groups
+- SSH
+- NGINX
+- GitHub Pages
+
+## Project Structure
+
+aws-vpc-webserver-project/
+- README.md
+- index.html
+
+## Future Improvements
+
+- Add a private subnet and NAT Gateway
+- Add an Application Load Balancer
+- Use Terraform or CloudFormation
+- Add a CI/CD pipeline with GitHub Actions
+- Make the architecture multi-AZ
+
+## Author
+
+Oumar Kebe
+Aspiring Cloud Engineer
+GitHub: https://github.com/okebe30
+LinkedIn: Add your link here
