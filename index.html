@@ -4,88 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AWS VPC Web Server Project</title>
-
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
     }
-
     header {
-      background-color: #1f2937;
-      color: white;
-      padding: 25px 0;
+      background-color: #1f2a39;
+      padding: 20px;
       text-align: center;
+      color: white;
       font-size: 32px;
       font-weight: bold;
     }
-
     .container {
-      width: 80%;
       max-width: 900px;
-      margin: auto;
-      padding: 40px 0;
-    }
-
-    h2 {
-      margin-top: 40px;
-      color: #1f2937;
-      border-left: 5px solid #2563eb;
-      padding-left: 10px;
-    }
-
-    .diagram img {
-      width: 90%;
-      max-width: 900px;
-      display: block;
-      margin: 25px auto;
-      border-radius: 12px;
-      box-shadow: 0 5px 18px rgba(0,0,0,0.25);
-    }
-
-    ul {
-      line-height: 1.7;
-      font-size: 17px;
-    }
-
-    .buttons {
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    .btn {
-      display: inline-block;
-      background-color: #2563eb;
-      color: white;
-      padding: 12px 24px;
-      text-decoration: none;
+      margin: 40px auto;
+      background: #fff;
+      padding: 25px;
       border-radius: 8px;
-      margin: 10px;
-      font-weight: bold;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     }
-
-    footer {
-      margin-top: 60px;
-      background-color: #1f2937;
-      color: white;
+    h2 {
+      color: #1f2a39;
+    }
+    ul {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+    .diagram {
       text-align: center;
-      padding: 18px 0;
+      margin: 40px 0;
+    }
+    .diagram img {
+      width: 95%;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .button-row {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+    }
+    .btn {
+      padding: 12px 22px;
+      background-color: #0073e6;
+      color: white;
+      border: none;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #005bb5;
+    }
+    footer {
+      margin-top: 40px;
+      background-color: #1f2a39;
+      padding: 18px;
+      text-align: center;
+      color: white;
       font-size: 14px;
     }
   </style>
 </head>
 
 <body>
-
   <header>AWS VPC Web Server Project</header>
 
   <div class="container">
-
     <h2>Project Overview</h2>
-    <p>This project demonstrates how to build a secure and scalable AWS environment with:</p>
+    <p>This project demonstrates how to build a secure and scalable AWS environment using:</p>
+
     <ul>
       <li>Custom VPC with public & private subnets</li>
       <li>Route tables & Internet Gateway</li>
@@ -94,25 +88,20 @@
       <li>Nginx configured as a web server</li>
     </ul>
 
-    <h2>AWS Architecture Diagram</h2>
     <div class="diagram">
-      <img src="architecture-diagram.png" alt="AWS VPC Architecture Diagram">
+      <h2>Architecture Diagram</h2>
+      <img src="architecture-diagram.png" alt="AWS Architecture Diagram">
     </div>
 
     <h2>Useful Links</h2>
-    <div class="buttons">
-      <a class="btn" href="https://github.com/okebe30/aws-vpc-webserver-project" target="_blank">
-        View GitHub Repository
-      </a>
-
-      <a class="btn" href="https://www.linkedin.com/in/oumar-kebe-456262375/" target="_blank">
-        Connect on LinkedIn
-      </a>
+    <div class="button-row">
+      <a class="btn" href="https://github.com/okebe30/aws-vpc-webserver-project" target="_blank">View GitHub Repository</a>
+      <a class="btn" href="https://linkedin.com/in/oumar-kebe-456262375" target="_blank">Connect on LinkedIn</a>
     </div>
-
   </div>
 
-  <footer>© 2025 Oumar Kebe — Cloud Engineer</footer>
-
+  <footer>
+    © 2025 Oumar Kebe — Cloud Engineer
+  </footer>
 </body>
 </html>
