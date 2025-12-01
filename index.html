@@ -1,75 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AWS VPC Web Server Project</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f5f7fa;
       margin: 0;
       padding: 0;
-      text-align: center;
+      background-color: #f4f4f4;
+      color: #333;
     }
 
     header {
-      background-color: #232f3e;
+      background-color: #1f2937;
       color: white;
       padding: 25px 0;
-    }
-
-    h1 {
-      margin: 0;
+      text-align: center;
       font-size: 32px;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 800px;
-      margin: 40px auto;
-      text-align: left;
-    }
-
-    ul {
-      line-height: 1.8;
-      font-size: 18px;
-    }
-
-    .links a {
-      display: inline-block;
-      margin: 12px;
-      padding: 12px 20px;
-      background-color: #0073bb;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
       font-weight: bold;
     }
 
-    .links a:hover {
-      background-color: #005f99;
+    .container {
+      width: 80%;
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 0;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #1f2937;
+      border-left: 5px solid #2563eb;
+      padding-left: 10px;
+    }
+
+    .diagram img {
+      width: 90%;
+      max-width: 900px;
+      display: block;
+      margin: 25px auto;
+      border-radius: 12px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.25);
+    }
+
+    ul {
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #2563eb;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      margin: 10px;
+      font-weight: bold;
     }
 
     footer {
-      margin-top: 40px;
-      padding: 20px;
-      background-color: #232f3e;
+      margin-top: 60px;
+      background-color: #1f2937;
       color: white;
+      text-align: center;
+      padding: 18px 0;
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>AWS VPC Web Server Project</h1>
-  </header>
+  <header>AWS VPC Web Server Project</header>
 
   <div class="container">
+
     <h2>Project Overview</h2>
     <p>This project demonstrates how to build a secure and scalable AWS environment with:</p>
-
     <ul>
       <li>Custom VPC with public & private subnets</li>
       <li>Route tables & Internet Gateway</li>
@@ -78,16 +94,25 @@
       <li>Nginx configured as a web server</li>
     </ul>
 
-    <h2>Useful Links</h2>
-    <div class="links">
-      <a href="https://github.com/okebe30/aws-vpc-webserver-project" target="_blank">View GitHub Repository</a>
-      <a href="https://www.linkedin.com/in/oumar-kebe-456262375/" target="_blank">Connect on LinkedIn</a>
+    <h2>AWS Architecture Diagram</h2>
+    <div class="diagram">
+      <img src="architecture-diagram.png" alt="AWS VPC Architecture Diagram">
     </div>
+
+    <h2>Useful Links</h2>
+    <div class="buttons">
+      <a class="btn" href="https://github.com/okebe30/aws-vpc-webserver-project" target="_blank">
+        View GitHub Repository
+      </a>
+
+      <a class="btn" href="https://www.linkedin.com/in/oumar-kebe-456262375/" target="_blank">
+        Connect on LinkedIn
+      </a>
+    </div>
+
   </div>
 
-  <footer>
-    © 2025 Oumar Kebe — Cloud Engineer
-  </footer>
+  <footer>© 2025 Oumar Kebe — Cloud Engineer</footer>
 
 </body>
 </html>
