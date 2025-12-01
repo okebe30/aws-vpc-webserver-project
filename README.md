@@ -10,6 +10,7 @@ Below is a visual representation of the AWS infrastructure I deployed:
 
 ![AWS Architecture Diagram](architecture-diagram.png)
 
+
 ---
 
 ## 🧰 Technologies Used
