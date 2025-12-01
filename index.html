@@ -1,65 +1,93 @@
-# AWS VPC Web Server Project
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWS VPC Web Server Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
 
-This project shows how I created a custom Virtual Private Cloud (VPC) on AWS with a public subnet, route table, internet gateway, security group, and an EC2 instance running a web server. It demonstrates my understanding of AWS networking and compute services.
+    header {
+      background-color: #232f3e;
+      color: white;
+      padding: 25px 0;
+    }
 
-## Architecture Overview
+    h1 {
+      margin: 0;
+      font-size: 32px;
+    }
 
-This project includes:
-- Custom VPC (10.0.0.0/16)
-- Public subnet
-- Internet Gateway
-- Route table with route to the IGW
-- Security group allowing HTTP and SSH
-- EC2 instance (Amazon Linux 2023)
-- NGINX web server
-- SSH key pair for secure access
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: 40px auto;
+      text-align: left;
+    }
 
-## Live Demo
+    ul {
+      line-height: 1.8;
+      font-size: 18px;
+    }
 
-My project website is hosted using GitHub Pages:
+    .links a {
+      display: inline-block;
+      margin: 12px;
+      padding: 12px 20px;
+      background-color: #0073bb;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
 
-https://okebe30.github.io/aws-vpc-webserver-project/
+    .links a:hover {
+      background-color: #005f99;
+    }
 
-## What I Learned
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #232f3e;
+      color: white;
+    }
+  </style>
+</head>
 
-- How to design a VPC
-- How subnets, route tables, and IGW work
-- How to configure security groups
-- How to launch an EC2 instance
-- How to connect using SSH
-- How to install NGINX on EC2
-- How to host a static site with GitHub Pages
-- How to use Git and GitHub for version control
+<body>
 
-## Technologies Used
+  <header>
+    <h1>AWS VPC Web Server Project</h1>
+  </header>
 
-- AWS VPC
-- Subnets
-- Route Tables
-- Internet Gateway
-- EC2
-- Security Groups
-- SSH
-- NGINX
-- GitHub Pages
+  <div class="container">
+    <h2>Project Overview</h2>
+    <p>This project demonstrates how to build a secure and scalable AWS environment with:</p>
 
-## Project Structure
+    <ul>
+      <li>Custom VPC with public & private subnets</li>
+      <li>Route tables & Internet Gateway</li>
+      <li>Security Groups for HTTP & SSH</li>
+      <li>EC2 Web Server (Amazon Linux 2023)</li>
+      <li>Nginx configured as a web server</li>
+    </ul>
 
-aws-vpc-webserver-project/
-- README.md
-- index.html
+    <h2>Useful Links</h2>
+    <div class="links">
+      <a href="https://github.com/okebe30/aws-vpc-webserver-project" target="_blank">View GitHub Repository</a>
+      <a href="https://www.linkedin.com/in/oumar-kebe-456262375/" target="_blank">Connect on LinkedIn</a>
+    </div>
+  </div>
 
-## Future Improvements
+  <footer>
+    © 2025 Oumar Kebe — Cloud Engineer
+  </footer>
 
-- Add a private subnet and NAT Gateway
-- Add an Application Load Balancer
-- Use Terraform or CloudFormation
-- Add a CI/CD pipeline with GitHub Actions
-- Make the architecture multi-AZ
-
-## Author
-
-Oumar Kebe
-Aspiring Cloud Engineer
-GitHub: https://github.com/okebe30
-LinkedIn: Add your link here
+</body>
+</html>
